@@ -21,6 +21,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 apollo {
   service("service") {
     sourceFolder.set("com/library")
-    schemaPath.set("../../../schema.sdl")
+    schemaPath.set("$rootDir/schema.sdl")
   }
 }
